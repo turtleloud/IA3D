@@ -5,8 +5,8 @@ const caixaResultado = document.querySelector('.caixa-resultado');
 
 const perguntas = [
     {
-        enunciado: "Você considera que a Inteligencia Artificial tem uma grande importancia nos dias de hoje?",
-        alternativas:["Alternativa 1","Alternativa 2"]
+        enunciado: "Você gosta da ideia de Inteligência Artificial?",
+        alternativas:["Sim","Não"]
     },
     {
         enunciado: "Pergunta 2",
@@ -26,9 +26,10 @@ function mostraPergunta(){
     caixaPergunta.textContent = perguntaAtual.enunciado;
     mostraAlternativas();
 }
-mostraAlternativas(){
+function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativa){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa;
+        caixaAlternativa.appendChild(botaoAlternativas);
     }
 }
