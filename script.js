@@ -32,7 +32,7 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Você acha necessario a regulamentação da IA?,
+        enunciado: "Você acha necessario a regulamentação da IA?",
         alternativas: [
             {
                 texto: "Sim",
