@@ -10,37 +10,37 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim",
-                afirmativa: "Afirmativa da alternativa 1"
+                afirmativa: "Eu gosto, acho sensacional!"
             },
             {
                 texto: "Não",
-                afirmativa: "Afirmativa da alternativa 2"
+                afirmativa: "Não gosto, acho que elas irão dominar o mundo."
             }
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Quanto tempo você acha necessário para a dominancia das IAS?",
         alternativas: [
             {
-                texto: "Sim",
-                afirmativa: "Afirmativa da alternativa 1"
+                texto: "10 anos",
+                afirmativa: "Em até 10 anos"
             },
             {
-                texto: "Não",
-                afirmativa: "Afirmativa da alternativa 2"
+                texto: "Não irá dominar o mundo",
+                afirmativa: "Não irá dominar o mundo"
             }
         ]
     },
     {
-        enunciado: "Pergunta 3",
+        enunciado: "Você acha necessario a regulamentação da IA?,
         alternativas: [
             {
                 texto: "Sim",
-                afirmativa: "Afirmativa da alternativa 1"
+                afirmativa: "Com certeza"
             },
             {
                 texto: "Não",
-                afirmativa: "Afirmativa da alternativa 2"
+                afirmativa: "Não acho necessario"
             }
         ]
     }
@@ -69,8 +69,8 @@ function mostraAlternativas() {
     }
 }
 function respostaSelecionada(opcaoSelecionada){
-    const afirmacoes = opcaoSelecionada.afirmativa;
-    respostas += afirmacoes;
+    const afirmacoes = opcaoSelecionada.afirmação;
+    respostas += afirmacoes + "";
     posicao++;
     mostraPergunta();
 }
